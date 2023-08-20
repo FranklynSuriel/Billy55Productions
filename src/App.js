@@ -1,12 +1,14 @@
 import React from 'react';
-import Landing from './pages/Landing';
-import Description from './pages/Description';
+import Landing from './components/Landing';
+import Description from './components/Description';
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
     <div className="App">
       <Landing />
       <Description />
+      <Portfolio />
     </div>
   );
 }
