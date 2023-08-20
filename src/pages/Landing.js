@@ -83,7 +83,7 @@ const styles = {
 function Landing() {
   return (
     <div style={styles.hero}>
-      <h2 style={styles.heroText}>BILLY55 PRODUCCIONES</h2>
+      <h1 style={styles.heroText}>BILLY55 PRODUCCIONES</h1>
       <ul style={styles.menu}>
         <li style={styles.list}>
           <a className="nav-link" style={styles.anchor} href="/">Acerca de Nosotros</a>
