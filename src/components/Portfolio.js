@@ -57,12 +57,13 @@ const styles = {
     gap: "20px",
     maxWidth: "1200px",
     margin: "auto",
+    
   },
 
   img: {
     flexShrink: "0",
-    width: "490px",
-    height: "500px",
+    width: "270px",
+    minHeight: "250px",
     display: "block",
     // webkitFilter: "grayscale(1)",
     // filter: "grayscale(1)",
@@ -71,7 +72,8 @@ const styles = {
     justifySelf: "start",
     alignSelf: "start",
     // aspectRatio: "0.98 / 1",
-    borderRadius: "40px",
+    borderRadius: "20px",
+    objectFit: "cover"
   },
 };
 
