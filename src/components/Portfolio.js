@@ -50,6 +50,15 @@ const styles = {
     textAlign: "left",
   },
 
+  container: {
+    display: "flex",
+    justifyContent: "space-around",
+    flexWrap: "wrap",
+    gap: "20px",
+    maxWidth: "1200px",
+    margin: "auto",
+  },
+
   img: {
     flexShrink: "0",
     width: "490px",
@@ -70,7 +79,7 @@ function Portfolio() {
   return (
     <div style={styles.portfolio}>
       <h2 style={styles.title}>Portafolio Cautivador</h2>
-      <div>
+      <div style={styles.container}>
         <img src={hazel1} style={styles.img} alt="Default" />
         <img src={hazel2} style={styles.img} alt="Default" />
         <img src={hazel3} style={styles.img} alt="Default" />
