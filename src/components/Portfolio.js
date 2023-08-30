@@ -1,12 +1,22 @@
 import React from "react";
-import hazel1 from "./pictures/hazel1.JPG";
-import hazel2 from "./pictures/hazel2.jpg";
-import hazel3 from "./pictures/hazel3.JPG";
-import hazel4 from "./pictures/hazel4.jpg";
-import hazel5 from "./pictures/hazel5.jpg";
-import hazel6 from "./pictures/hazel6.jpg";
-import hazel7 from "./pictures/hazel7.jpg";
-import hazel8 from "./pictures/hazel8.jpg";
+import image01 from "./pictures/image01.jpg";
+import image02 from "./pictures/image02.jpg";
+import image03 from "./pictures/image03.jpg";
+import image04 from "./pictures/image04.jpg";
+import image05 from "./pictures/image05.jpg";
+import image06 from "./pictures/image06.jpg";
+import image07 from "./pictures/image07.jpg";
+import image08 from "./pictures/image08.jpg";
+import image09 from "./pictures/image09.jpg";
+import image10 from "./pictures/image10.jpg";
+import image11 from "./pictures/image11.jpg";
+import image12 from "./pictures/image12.jpg";
+import image13 from "./pictures/image13.jpg";
+import image14 from "./pictures/image14.jpg";
+import image15 from "./pictures/image15.jpg";
+import image16 from "./pictures/image16.jpg";
+import image17 from "./pictures/image17.jpg";
+import image18 from "./pictures/image18.jpg";
 
 const styles = {
   portfolio: {
@@ -55,14 +65,14 @@ const styles = {
     justifyContent: "space-around",
     flexWrap: "wrap",
     gap: "20px",
-    maxWidth: "1200px",
+    maxWidth: "1024px",
     margin: "auto",
     
   },
 
   img: {
     flexShrink: "0",
-    width: "270px",
+    width: "350px",
     minHeight: "250px",
     display: "block",
     // webkitFilter: "grayscale(1)",
@@ -82,14 +92,24 @@ function Portfolio() {
     <div style={styles.portfolio}>
       <h2 style={styles.title}>Portafolio Cautivador</h2>
       <div style={styles.container}>
-        <img src={hazel1} style={styles.img} alt="Default" />
-        <img src={hazel2} style={styles.img} alt="Default" />
-        <img src={hazel3} style={styles.img} alt="Default" />
-        <img src={hazel4} style={styles.img} alt="Default" />
-        <img src={hazel5} style={styles.img} alt="Default" />
-        <img src={hazel6} style={styles.img} alt="Default" />
-        <img src={hazel7} style={styles.img} alt="Default" />
-        <img src={hazel8} style={styles.img} alt="Default" />
+        <img src={image01} style={styles.img} alt="Default" />
+        <img src={image02} style={styles.img} alt="Default" />
+        <img src={image03} style={styles.img} alt="Default" />
+        <img src={image04} style={styles.img} alt="Default" />
+        <img src={image05} style={styles.img} alt="Default" />
+        <img src={image06} style={styles.img} alt="Default" />
+        <img src={image07} style={styles.img} alt="Default" />
+        <img src={image08} style={styles.img} alt="Default" />
+        <img src={image09} style={styles.img} alt="Default" />
+        <img src={image10} style={styles.img} alt="Default" />
+        <img src={image11} style={styles.img} alt="Default" />
+        <img src={image12} style={styles.img} alt="Default" />
+        <img src={image13} style={styles.img} alt="Default" />
+        <img src={image14} style={styles.img} alt="Default" />
+        <img src={image15} style={styles.img} alt="Default" />
+        <img src={image16} style={styles.img} alt="Default" />
+        <img src={image17} style={styles.img} alt="Default" />
+        <img src={image18} style={styles.img} alt="Default" />
       </div>
     </div>
   );
