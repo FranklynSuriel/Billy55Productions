@@ -65,14 +65,14 @@ const styles = {
 function Description() {
   return (
     <>
-    <did style = {styles.text}>
+    <div style = {styles.text}>
       <h2 style={styles.title}>Captura el Momento</h2>
       <p style={styles.paragraph}>
         Bienvenidos a Billy55 Producciones donde impresionantes capturas
         cobran vida por manos expertas. Prepárese para sorprenderse con 
         la artesanía de nuestro experto fotógrafo
       </p>
-    </did>
+    </div>
     </>
   );
 }
