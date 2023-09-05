@@ -34,7 +34,7 @@ const styles = {
     flexShrink: "0",
     // flex: "1 0 0px",
     // width: "204px",
-    height: "370px" /* 403px */,
+    height: "403px" /* 403px */,
     display: "flex",
     flexDirection: "column",
     // justifyContent: "flex-start",
@@ -86,7 +86,7 @@ const styles = {
     boxSizing: "border-box",
     flexShrink: "0",
     // width: '1px',
-    height: "min-content" /* 154px */,
+    height: "154px" /* 154px */,
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-start",
@@ -114,7 +114,7 @@ const styles = {
     fontStyle: "normal",
     fontFamily: `"Libre Baskerville", "Libre Baskerville Placeholder", serif`,
     color: "#edbfc6",
-    fontSize: "14ox",
+    fontSize: "14px",
     letterSpacing: "0em",
     lineHeight: 1.5,
     textAlign: "left",
@@ -128,7 +128,7 @@ function Pricing() {
         <div style={styles.card}>
           <h4 style={styles.cardTitle}>Basico</h4>
           <h2 style={styles.price}> 99.99</h2>
-          <div style={styles.details}>
+          <div style={styles.planDetail}>
               <p style={styles.plans}>✓ 7 Fotos</p>
               <p style={styles.plans}>✓ Galleria de Fotos </p>
               <p style={styles.plans}>✓ 1 Locacion</p>
@@ -138,7 +138,7 @@ function Pricing() {
         <div style={styles.card}>
           <h4 style={styles.cardTitle}>Avanzado</h4>
           <h2 style={styles.price}> 199.99</h2>
-            <div style={styles.details}>
+            <div style={styles.planDetail}>
               <p style={styles.plans}>✓ 15 Photos</p>
               <p style={styles.plans}>✓ Album</p>
               <p style={styles.plans}>✓ 2 Locaciones</p>
@@ -148,7 +148,7 @@ function Pricing() {
         <div style={styles.card}>
           <h4 style={styles.cardTitle}>Premium</h4>
           <h2 style={styles.price}> 299.99</h2>
-            <div style={styles.details}>
+            <div style={styles.planDetail}>
               <p style={styles.plans}>✓ 25 Fotos</p>
               <p style={styles.plans}>✓ fotos con Drones</p>
               <p style={styles.plans}>✓ diferentes Outfit</p>
