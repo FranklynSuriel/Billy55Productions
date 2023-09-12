@@ -1,9 +1,11 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./index.css";
-import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fa500px, faFacebook, faInstagram, faPinterest, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Contact() {
   const [email, setEmail] = useState("");
@@ -23,10 +25,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_bhy996m",
-        "template_vxsdzf9",
+        "service_ax1apj9",
+        "template_1soogrj",
         form.current,
-        "6Pa3MRGA0UbxP5RKe"
+        "EOnAo4qDst6m2SlBi"
       )
       .then(
         (result) => {
@@ -63,108 +65,80 @@ function Contact() {
 
   return (
     <div className="contact-form">
-      <h1 className="title">Contacto</h1>
-      <p>
-        ¿Listo para darle vida a tus recuerdos? No dude en comunicarse con
-        nosotros y unirse a la experiencia Billy55Producciones.
-      </p>
-      <div>
-        <form
-          ref={form}
-          onSubmit={sendEmail}
-          className="form"
-        >
-          <input
-            value={fullName}
-            name="fullName"
-            onChange={handleInputChange}
-            onBlur={handleInputChange}
-            type="text"
-            placeholder="Nombre"
-            className="formInput"
-          />
-          <input
-            value={email}
-            name="email"
-            onChange={handleInputChange}
-            onBlur={handleInputChange}
-            type="email"
-            placeholder="Correo Electronico"
-            className="formInput"
-          />
-          <textarea
-            value={message}
-            name="message"
-            onChange={handleInputChange}
-            onBlur={handleInputChange}
-            type="textarea"
-            placeholder="Mensaje"
-            className="formInput"
-          />
-          <button className="flat-button" type="submit">
-            Enviar
-          </button>
-        </form>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
+      <div className="form">
+        <h1 className="title">Contacto</h1>
+        <p>
+          ¿Listo para darle vida a tus recuerdos? No dude en comunicarse con
+          nosotros y unirse a la experiencia Billy55Producciones.
+        </p>
+        <div>
+          <form ref={form} onSubmit={sendEmail} >
+            <input
+              value={fullName}
+              name="fullName"
+              onChange={handleInputChange}
+              onBlur={handleInputChange}
+              type="text"
+              placeholder="Nombre"
+              className="formInput"
+              id="inputName"
+            />
+            <input
+              value={email}
+              name="email"
+              onChange={handleInputChange}
+              onBlur={handleInputChange}
+              type="email"
+              placeholder="Correo Electronico"
+              className="formInput"
+              id="inputEmail"
+            />
+            <textarea
+              value={message}
+              name="message"
+              onChange={handleInputChange}
+              onBlur={handleInputChange}
+              type="textarea"
+              placeholder="Mensaje"
+              className="formInput"
+              id="inputMessage"
+            />
+            <button className="flat-button" type="submit">
+              Enviar
+            </button>
+          </form>
+          {errorMessage && (
+            <div>
+              <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
+        </div>
       </div>
-      <div >
+      <div className="redes">
+      <h2>Siguenos en las redes</h2>
         <ul>
           <li>
-            <a 
-            target="_black"
-            rel="noreferrer"
-            href="https://www.instagram.com"
+            <a
+              target="_black"
+              rel="noreferrer"
+              href="https://www.instagram.com"
             >
-              <FontAwesomeIcon icon={faInstagram} color="red" className="icon"/>
+              <FontAwesomeIcon
+                icon={faInstagram}
+                color="red"
+                className="icon"
+              />
             </a>
           </li>
           <li>
-            <a 
-            target="_black"
-            rel="noreferrer"
+            <a target="_black" 
+            rel="noreferrer" 
             href="https://www.youtube.com"
             >
-              <FontAwesomeIcon icon={faYoutube} color="red" className="icon"/>
-            </a>
-          </li>
-          <li>
-            <a 
-            target="_black"
-            rel="noreferrer"
-            href="https://www.facebook.com"
-            >
-              <FontAwesomeIcon icon={faFacebook} color="blue" className="icon"/>
-            </a>
-          </li>
-          <li>
-            <a 
-            target="_black"
-            rel="noreferrer"
-            href="https://www.pinterest.com"
-            >
-              <FontAwesomeIcon icon={faPinterest} color="red" className="icon"/>
-            </a>
-          </li>
-          <li>
-            <a 
-            target="_black"
-            rel="noreferrer"
-            href="https://www.Twitter.com"
-            >
-              <FontAwesomeIcon icon={faTwitter} color="lightBlue" className="icon"/>
-            </a>
-          </li>
-          <li>
-            <a 
-            target="_black"
-            rel="noreferrer"
-            href="https://www.500px.com"
-            >
-              <FontAwesomeIcon icon={fa500px} color="Black" className="icon"/>
+              <FontAwesomeIcon 
+              icon={faYoutube} 
+              color="red" 
+              className="icon" />
             </a>
           </li>
         </ul>

@@ -1,0 +1,104 @@
+@import "animate.css";
+
+#hero {
+  box-sizing: border-box;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  background-color: rgb(50, 17, 17);
+  overflow: hidden;
+  
+}
+
+#hero_text {
+  max-width: 660px;
+  height: auto; /* 81px */
+  font-style: normal;
+  font-family: serif;
+  font-size: 81px;
+  color: #ffffff;
+  letter-spacing: 0em;
+  line-height: 1;
+  text-align: center;
+}
+
+#navBar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+  list-style: none;
+}
+
+.list {
+  padding: 0 16px;
+  text-decoration: none;
+}
+
+.list:hover {
+  animation: heartBeat 1s;
+}
+
+.nav-link {
+  color:#ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  #hero_text {
+    font-size: 61px;
+  }
+
+  .list {
+    padding: 0 8px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  #hero {
+    padding: 20px;
+  }
+  
+  #hero_text {
+    font-size: 48px;
+  }
+
+  .list {
+    padding: 0;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 0 4px;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  #hero {
+    padding: 20px;
+  }
+
+  #hero_text {
+    font-size: 36px;
+  }
+
+  .navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list {
+    padding: 0;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 0 4px;
+  }
+
+}

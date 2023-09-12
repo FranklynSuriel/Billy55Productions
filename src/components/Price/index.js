@@ -121,7 +121,7 @@ const styles = {
   },
 };
 
-function Pricing() {
+function Price() {
   return (
     <div style={styles.pricing}>
       <div style={styles.container}>
@@ -160,4 +160,4 @@ function Pricing() {
   );
 }
 
-export default Pricing;
+export default Price;
