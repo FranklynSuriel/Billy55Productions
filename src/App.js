@@ -1,17 +1,17 @@
 import React from 'react';
-import Landing from './components/Landing';
-import Description from './components/Description';
+import Hero from './components/Hero';
+import About from './components/About'
 import Portfolio from './components/Portfolio';
-import Pricing from './components/pricing';
-import Contact from './components/Contact/index.js';
+import Price from './components/Price'
+import Contact from './components/Contact';
 
 function App() {
   return (
     <div className="App">
-      <Landing />
-      <Description />
+      <Hero />
+      <About />
       <Portfolio />
-      <Pricing />
+      <Price />
       <Contact />
     </div>
   );

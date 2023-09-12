@@ -2,15 +2,14 @@
 
 .contact-form {
   box-sizing: border-box;
-  flex-shrink: 0;
   width: 100%;
   height: min-content; /* 672px */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 100px 50px;
-  background-color: #ffffff;
+  padding: 100px 50px 50px 50px;
+  background-color: #f8f9fa;
   overflow: hidden;
   flex: 1 0 0px;
   position: relative;
@@ -19,9 +18,20 @@
   
 }
 
+.form{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 600px;
+  padding: 24px;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 20px 0px;
+}
+
 .title {
   flex-shrink: 0;
   height: auto; /* 72px */
+  width: 250px;
   flex: 1 0 0px;
   position: relative;
   font-weight: 800;
@@ -41,7 +51,7 @@
 
 p {
   flex-shrink: 0;
-  width: 600px;
+  width: auto;
   height: auto; /* 60px */
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -59,13 +69,6 @@ p {
   text-align: left;
 }
 
-.form{
-  display: flex;
-  flex-direction: column;
-  min-width: 300px;
-  max-width: 600px;
-  padding: 24px 0;
-}
 
 .formInput {
   width: 100%;
@@ -122,7 +125,7 @@ ul {
 }
 
 li a {
-  padding: 0 16px;
+  padding: 0 8px;
   text-decoration: none;
 }
 
@@ -131,6 +134,16 @@ li:hover {
 }
 
 .icon {
-  height: 28px;
-  padding: 12px 0;
+  height: 38px;
+  padding: 16px;
 }
+
+.redes {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0 0 0;
+}
+
+
