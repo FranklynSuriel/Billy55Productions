@@ -28,7 +28,7 @@
   box-shadow: 10px 10px 20px 0px;
 }
 
-.title {
+.form_title {
   flex-shrink: 0;
   height: auto; /* 72px */
   width: 250px;
@@ -44,12 +44,12 @@
   text-align: left;
 }
 
-.title:hover {
+.form_title:hover {
   animation: heartBeat 1s;
   color: #2b48ef;
 }
 
-p {
+.form_title p {
   flex-shrink: 0;
   width: auto;
   height: auto; /* 60px */
@@ -106,7 +106,7 @@ textarea {
   float: right;
   animation: fadeIn 1s 1.8s backwards;
   white-space: nowrap;
-
+  
   &:hover {
     background: #2b48ef;
     color: #fff;
@@ -117,19 +117,27 @@ textarea {
   max-width: 200px;
 }
 
-ul {
+.redes {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0 0 0;
+}
+
+.redes ul {
   display: flex;
   flex-wrap: wrap;
   padding: 4px;
   list-style: none;
 }
 
-li a {
+.redes li a {
   padding: 0 8px;
   text-decoration: none;
 }
 
-li:hover {
+.redes li:hover {
   animation: heartBeat 1s;
 }
 
@@ -138,12 +146,5 @@ li:hover {
   padding: 16px;
 }
 
-.redes {
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 32px 0 0 0;
-}
 
 

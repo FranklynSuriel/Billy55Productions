@@ -66,7 +66,7 @@ function Contact() {
   return (
     <div className="contact-form">
       <div className="form">
-        <h1 className="title">Contacto</h1>
+        <h1 className="form_title">Contacto</h1>
         <p>
           ¿Listo para darle vida a tus recuerdos? No dude en comunicarse con
           nosotros y unirse a la experiencia Billy55Producciones.

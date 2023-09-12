@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   padding: 100px;
-  background-color: rgb(50, 17, 17);
+  background-color: #5f4842;
   overflow: hidden;
   
 }
@@ -35,12 +35,15 @@
 
 .list {
   padding: 0 16px;
-  text-decoration: none;
 }
 
-.list:hover {
-  animation: heartBeat 1s;
+.list a {
+  text-decoration: none;
+
 }
+/* .list:hover {
+  animation: heartBeat 1s;
+} */
 
 .nav-link {
   color:#ffffff;
