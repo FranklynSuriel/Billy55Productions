@@ -11,7 +11,7 @@
   padding: 100px;
   background-color: #003566;
   overflow: hidden;
-  
+  animation: fadeIn 1s forwards;
 }
 
 #hero_text {

@@ -1,3 +1,4 @@
+@import "animate.css";
 
 .portfolio {
   box-sizing: border-box;
@@ -46,12 +47,14 @@
   /* height: 316px; */
   object-fit: cover;
   border-radius: 20px;
+  animation: fadeInUp 2s forwards;
 }
 
 .portfolio_image_portrait {
   height: 350px;
   object-fit: cover;
   border-radius: 20px;
+  animation: fadeInUp 2s forwards;
 }
 
 @media screen and (max-width: 992px) {

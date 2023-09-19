@@ -1,4 +1,4 @@
-
+@import "animate.css";
 
 .about_text {
   box-sizing: border-box;
@@ -36,6 +36,7 @@
   line-height: 1.2;
   text-align: left;
   padding-right: 8px;
+  animation: fadeInLeft 1s forwards;
 }
 
 .about_paragraph {
@@ -53,6 +54,7 @@
   line-height: 1.5;
   text-align: left;
   padding-left: 8px;
+  animation: fadeInRight 1s forwards;
 }
 
 @media screen and (max-width: 768px) {
