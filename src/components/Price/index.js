@@ -3,7 +3,7 @@ import "./index.css";
 
 function Price() {
   return (
-    <div className="price">
+    <div id="price" className="price">
       <div className="card_container">
         <div className="card">
           <h4>Basico</h4>

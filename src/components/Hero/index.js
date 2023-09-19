@@ -19,12 +19,12 @@ function Hero() {
           </a>
         </li>
         <li className="list">
-          <a className="nav-link" href="/">
+          <a className="nav-link" href="#price">
             Cotizaciones
           </a>
         </li>
         <li className="list">
-          <a className="nav-link" href="/">
+          <a className="nav-link" href="#contact_me">
             Contactenos
           </a>
         </li>

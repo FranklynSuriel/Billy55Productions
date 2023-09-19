@@ -36,8 +36,8 @@
   position: relative;
   font-weight: 800;
   font-style: normal;
-  font-family: "Wix Madefor Display", sans-serif;
-  color: #260c1a;
+  font-family: sans-serif;
+  color: #001d3d;
   font-size: 48px;
   letter-spacing: 0em;
   line-height: 1.5;
@@ -46,23 +46,20 @@
 
 .form_title:hover {
   animation: heartBeat 1s;
-  color: #2b48ef;
+  color: #003566;
 }
 
-.form_title p {
+.form p {
   flex-shrink: 0;
   width: auto;
   height: auto; /* 60px */
   white-space: pre-wrap;
-  word-wrap: break-word;
-  word-break: break-word;
-  max-width: 100%;
   overflow: visible;
   position: relative;
   font-weight: 400;
   font-style: normal;
-  font-family: "Libre Baskerville", "Libre Baskerville Placeholder", serif;
-  color: #432e36;
+  font-family: sans-serif;
+  color: #000814;
   font-size: 20px;
   letter-spacing: 0em;
   line-height: 1.5;
@@ -92,7 +89,7 @@ textarea {
 }
 
 .flat-button {
-  color: #333;
+  color: #000814;
   width: 100px;
   background: none;
   font-size: 14px;
@@ -108,8 +105,8 @@ textarea {
   white-space: nowrap;
   
   &:hover {
-    background: #2b48ef;
-    color: #fff;
+    background: #003566;
+    color: #ffc300;
   }
 }
 
@@ -159,6 +156,10 @@ textarea {
   font-family: sans-serif;
   font-weight: 200;
   font-size: 16px;
+}
+
+.footer p:nth-child(2) {
+  opacity: 0.5;
 }
 
 

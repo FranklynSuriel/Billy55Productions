@@ -5,7 +5,7 @@
   height: min-content; /* 603px */
   align-items: center;
   padding: 20px;
-  background-color: #260c1a;
+  background-color: #cad2c5;
   overflow: visible;
   position: relative;
 
@@ -21,7 +21,7 @@
 
 .card {
   box-sizing: border-box;
-  width: 204px;
+  width: 280px;
   height: 403px; /* 403px */
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
   align-items: flex-start;
   padding: 20px;
   box-shadow: 0px 10px 20px -20px rgba(0, 0, 0, 0.25);
-  background-color: #391227;
+  background-color: #f2f2f2;
   overflow: hidden;
   position: relative;
   align-content: flex-start;
@@ -41,13 +41,15 @@
 .card h4 {
   width: auto; /* 37px */
   height: auto; /* 21px */
+  margin: 8px;
+
   white-space: pre;
   position: relative;
   font-weight: 400;
   font-style: normal;
   font-family: "Libre Baskerville", "Libre Baskerville Placeholder", serif;
-  color: #edbfc6;
-  font-size: 14px;
+  color: #001d3d;
+  font-size: 18px;
   letter-spacing: 0em;
   line-height: 1.5;
   text-align: left;
@@ -62,7 +64,7 @@
   font-weight: 800;
   font-style: normal;
   font-family: "Wix Madefor Display", sans-serif;
-  color: #ffffff;
+  color: #001d3d;
   font-size: 40px;
   letter-spacing: 0em;
   line-height: 1;
@@ -78,8 +80,8 @@
   font-weight: 400;
   font-style: normal;
   font-family: "Libre Baskerville", "Libre Baskerville Placeholder", serif;
-  color: #edbfc6;
-  font-size: 14px;
+  color: #001d3d;
+  font-size: 16px;
   letter-spacing: 0em;
   line-height: 1.5;
   text-align: left;
