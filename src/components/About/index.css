@@ -1,4 +1,4 @@
-
+@import "animate.css";
 
 .about_text {
   box-sizing: border-box;
@@ -30,16 +30,17 @@
   position: relative;
   font-weight: 800;
   font-style: sans-serif;
-  color: #000814;
+  color: #001d3d;
   font-size: 48px;
   letter-spacing: 0em;
   line-height: 1.2;
   text-align: left;
   padding-right: 8px;
+  animation: fadeInLeft 1s forwards;
 }
 
 .about_paragraph {
-  width: 320px;
+  width: 424px;
   height: auto; 
   white-space: pre-wrap;
   overflow: visible;
@@ -48,11 +49,12 @@
   font-style: normal;
   font-family: serif;
   color: #000000;
-  font-size: 20px;
+  font-size: 24px;
   letter-spacing: 0em;
   line-height: 1.5;
   text-align: left;
   padding-left: 8px;
+  animation: fadeInRight 1s forwards;
 }
 
 @media screen and (max-width: 768px) {
@@ -69,6 +71,7 @@
 
   .about_paragraph {
     padding: 0;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 425px) {

@@ -1,3 +1,4 @@
+@import "animate.css";
 
 .portfolio {
   box-sizing: border-box;
@@ -8,7 +9,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 36px;
-  background-color: #260c1a;
+  background-color: #cad2c5;
   overflow: hidden;
   position: relative;
   align-content: center;
@@ -24,7 +25,7 @@
   font-weight: 800;
   font-style: normal;
   font-family: sans-serif;
-  color: #edbfc6;
+  color: #001d3d;
   font-size: 48px;
   letter-spacing: 0em;
   line-height: 1.2;
@@ -43,15 +44,17 @@
 .portfolio_image_landscape {
   flex-shrink: 1 0 0px;
   max-width: 450px;
-  height: 253px;
+  /* height: 316px; */
   object-fit: cover;
   border-radius: 20px;
+  animation: fadeInUp 2s forwards;
 }
 
 .portfolio_image_portrait {
   height: 350px;
   object-fit: cover;
   border-radius: 20px;
+  animation: fadeInUp 2s forwards;
 }
 
 @media screen and (max-width: 992px) {
