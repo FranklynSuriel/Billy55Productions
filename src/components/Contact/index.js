@@ -2,10 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 function Contact() {
   const [email, setEmail] = useState("");
@@ -72,7 +69,7 @@ function Contact() {
           nosotros y unirse a la experiencia Billy55Producciones.
         </p>
         <div>
-          <form ref={form} onSubmit={sendEmail} >
+          <form ref={form} onSubmit={sendEmail}>
             <input
               value={fullName}
               name="fullName"
@@ -115,7 +112,7 @@ function Contact() {
         </div>
       </div>
       <div className="redes">
-      <h2>Siguenos en las redes</h2>
+        <h2>Siguenos en las redes</h2>
         <ul>
           <li>
             <a
@@ -131,17 +128,15 @@ function Contact() {
             </a>
           </li>
           <li>
-            <a target="_black" 
-            rel="noreferrer" 
-            href="https://www.youtube.com"
-            >
-              <FontAwesomeIcon 
-              icon={faYoutube} 
-              color="red" 
-              className="icon" />
+            <a target="_black" rel="noreferrer" href="https://www.youtube.com">
+              <FontAwesomeIcon icon={faYoutube} color="red" className="icon" />
             </a>
           </li>
         </ul>
+      </div>
+      <div className="footer">
+        <p>© Billy55Producciones2023</p>
+        <p>Generated on Sept 19, 2023 </p>
       </div>
     </div>
   );

@@ -43,7 +43,7 @@
 .portfolio_image_landscape {
   flex-shrink: 1 0 0px;
   max-width: 450px;
-  height: 253px;
+  /* height: 316px; */
   object-fit: cover;
   border-radius: 20px;
 }
