@@ -9,7 +9,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 36px;
-  background-color: #cad2c5;
+  background-color: #d3d3d3; /* #cad2c5 */
   overflow: hidden;
   position: relative;
   align-content: center;
@@ -47,21 +47,26 @@
   /* height: 316px; */
   object-fit: cover;
   border-radius: 20px;
-  animation: fadeInUp 2s forwards;
+  transition: transform 2s;
 }
 
 .portfolio_image_portrait {
   height: 350px;
   object-fit: cover;
   border-radius: 20px;
-  animation: fadeInUp 2s forwards;
+  transition: transform 2s;
+
+}
+
+.portfolio_image_portrait:hover, .portfolio_image_landscape:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {
   .portfolio {
     padding: 18px;
   }
-  
+
   .portfolio_title {
     font-size: 32px;
   }
@@ -69,9 +74,8 @@
   .portfolio_image_landscape {
     width: 348px;
     height: 253px;
-  
   }
-  
+
   .portfolio_image_portrait {
     height: 350px;
     object-fit: cover;
@@ -83,17 +87,15 @@
   .portfolio {
     padding: 8px;
   }
-  
+
   .portfolio_title {
     font-size: 24px;
   }
 
   .portfolio_image_landscape {
     width: 300px;
-    
-  
   }
-  
+
   .portfolio_image_portrait {
     height: 350px;
     object-fit: cover;

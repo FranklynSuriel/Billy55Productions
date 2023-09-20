@@ -11,7 +11,7 @@
   padding: 100px;
   background-color: #003566;
   overflow: hidden;
-  animation: fadeIn 1s forwards;
+  animation: fadeIn 1.5s forwards;
 }
 
 #hero_text {
@@ -80,16 +80,16 @@
 @media screen and (max-width: 425px) {
   #hero {
     padding: 20px;
+    height: 500px;
   }
 
   #hero_text {
     font-size: 36px;
   }
 
-  .navBar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  #navBar {
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   .list {

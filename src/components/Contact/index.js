@@ -118,7 +118,7 @@ function Contact() {
             <a
               target="_black"
               rel="noreferrer"
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/b.fotografo55/"
             >
               <FontAwesomeIcon
                 icon={faInstagram}
@@ -128,7 +128,11 @@ function Contact() {
             </a>
           </li>
           <li>
-            <a target="_black" rel="noreferrer" href="https://www.youtube.com">
+            <a
+              target="_black"
+              rel="noreferrer"
+              href="https://www.youtube.com/channel/UCspzzX8DIznZpE8jHT9ZaZA"
+            >
               <FontAwesomeIcon icon={faYoutube} color="red" className="icon" />
             </a>
           </li>
