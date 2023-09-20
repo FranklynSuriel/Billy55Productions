@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Billy55Productions/static/css/main.bfb6c859.css",
-    "main.js": "/Billy55Productions/static/js/main.9c53fd0f.js",
+    "main.css": "/Billy55Productions/static/css/main.c888ec52.css",
+    "main.js": "/Billy55Productions/static/js/main.0a7b099b.js",
     "static/js/787.92eaf79d.chunk.js": "/Billy55Productions/static/js/787.92eaf79d.chunk.js",
     "static/media/image02.jpg": "/Billy55Productions/static/media/image02.6ea9b9b1877c4d0ed6fd.jpg",
     "static/media/image06.jpg": "/Billy55Productions/static/media/image06.a54581c75ccc51c9a015.jpg",
@@ -20,12 +20,12 @@
     "static/media/image14.jpg": "/Billy55Productions/static/media/image14.ac53ddaaa26a4e18cd6b.jpg",
     "static/media/image15.jpg": "/Billy55Productions/static/media/image15.dde7f0e8d5f89876df96.jpg",
     "index.html": "/Billy55Productions/index.html",
-    "main.bfb6c859.css.map": "/Billy55Productions/static/css/main.bfb6c859.css.map",
-    "main.9c53fd0f.js.map": "/Billy55Productions/static/js/main.9c53fd0f.js.map",
+    "main.c888ec52.css.map": "/Billy55Productions/static/css/main.c888ec52.css.map",
+    "main.0a7b099b.js.map": "/Billy55Productions/static/js/main.0a7b099b.js.map",
     "787.92eaf79d.chunk.js.map": "/Billy55Productions/static/js/787.92eaf79d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfb6c859.css",
-    "static/js/main.9c53fd0f.js"
+    "static/css/main.c888ec52.css",
+    "static/js/main.0a7b099b.js"
   ]
 }
