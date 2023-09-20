@@ -60,6 +60,7 @@
 @media screen and (max-width: 768px) {
   #hero {
     padding: 20px;
+    height: 500px;
   }
   
   #hero_text {
@@ -80,7 +81,7 @@
 @media screen and (max-width: 425px) {
   #hero {
     padding: 20px;
-    height: 500px;
+    height: 400px;
   }
 
   #hero_text {
