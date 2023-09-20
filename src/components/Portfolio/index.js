@@ -1,5 +1,7 @@
-import React from "react";
-import './index.css'
+import React, { useState } from "react";
+import './index.css';
+import 'animate.css';
+import ImageModal from "./ImageModal";
 
 const images = [
   require('../pictures/image01.jpg'),
@@ -23,6 +25,15 @@ const images = [
 ];
 
 function Portfolio() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (index) => {
+    setSelectedImage(index);
+  }
+
+  const handleCloseModal = () => {
+    setSelectedImage(null);
+  }
   return (
     <div id="portfolio" className="portfolio">
       <h2 className="portfolio_title">Portafolio Cautivador</h2>
@@ -31,11 +42,19 @@ function Portfolio() {
           <img
             key={index}
             src={image}
-            className={index < 8 ? "portfolio_image_landscape" : "portfolio_image_portrait"}
+            className={index < 8 ? 'portfolio_image_landscape' : 'portfolio_image_portrait'}
             alt={` Sample ${index + 1}`}
+            onClick={() => handleImageClick(index)}
           />
         ))}
       </div>
+      {selectedImage !== null && (
+        <ImageModal
+          imageUrl={images[selectedImage]}
+          onClose={handleCloseModal}
+        />
+      )}
+
     </div>
   );
 }

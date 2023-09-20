@@ -3,7 +3,7 @@
 .about_text {
   box-sizing: border-box;
   flex-shrink: 0;
-  height: 320px;
+  height: 380px;
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -40,7 +40,7 @@
 }
 
 .about_paragraph {
-  width: 424px;
+  width: 600px;
   height: auto; 
   white-space: pre-wrap;
   overflow: visible;
@@ -55,6 +55,17 @@
   text-align: left;
   padding-left: 8px;
   animation: fadeInRight 1s forwards;
+}
+
+.about_paragraph span {
+  color: #ffc300;
+}
+
+@media screen and (max-width: 1024px) {
+  .about_paragraph {
+    font-size: 21px;
+    width: 380px;
+  }
 }
 
 @media screen and (max-width: 768px) {
