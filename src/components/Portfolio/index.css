@@ -68,7 +68,8 @@
   }
 
   .portfolio_title {
-    font-size: 32px;
+    font-size: 38px;
+    text-align: center;
   }
 
   .portfolio_image_landscape {
@@ -83,13 +84,14 @@
   }
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 425px) {
   .portfolio {
     padding: 8px;
   }
 
   .portfolio_title {
-    font-size: 24px;
+    font-size: 30px;
+    text-align: center;
   }
 
   .portfolio_image_landscape {
