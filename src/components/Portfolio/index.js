@@ -3,6 +3,8 @@ import './index.css';
 import 'animate.css';
 import ImageModal from "./ImageModal";
 
+import { useLocalization } from '../../context/LocalizationContext'
+
 const images = [
   require('../pictures/image01.jpg'),
   require('../pictures/image02.jpg'),
@@ -25,6 +27,9 @@ const images = [
 ];
 
 function Portfolio() {
+
+  const { translate } = useLocalization();
+
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageClick = (index) => {
@@ -36,7 +41,7 @@ function Portfolio() {
   }
   return (
     <div id="portfolio" className="portfolio">
-      <h2 className="portfolio_title">Portafolio Cautivador</h2>
+      <h1 className="portfolio_title">{translate("portfolioTitle")}</h1>
       <div className="portfolio_container">
         {images.map((image, index) => (
           <img

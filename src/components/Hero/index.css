@@ -14,6 +14,19 @@
   animation: fadeIn 1.5s forwards;
 }
 
+#buttonLanguage {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transform: translate(-50%, 0);
+  height: 28px;
+  background: none;
+  background-color: #d3d3d3;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
 #hero_text {
   max-width: 660px;
   height: auto; /* 81px */

@@ -1,17 +1,17 @@
 import React from "react";
 import "./index.css";
+import { useLocalization } from '../../context/LocalizationContext'
 
 function About() {
+
+  const { translate } = useLocalization();
+
   return (
     <>
       <div id="about_me" className="about_text">
-        <h2 className="about_title">Captura el Momento</h2>
+        <h1 className="about_title">{translate("aboutTitle")}</h1>
         <p className="about_paragraph">
-          Bienvenidos a <span>BILLY55 PRODUCCIONES</span>, donde impresionantes imágenes
-          cobran vida. Nuestra empresa está conformada por un equipo
-          experimentado en la producción fotográfica y de video. Nuestro
-          objetivo principal es convertir la concepción de tus ideas en un
-          producto audiovisual y fotográfico de alta calidad.
+        {translate("aboutParagraph")}
         </p>
       </div>
     </>

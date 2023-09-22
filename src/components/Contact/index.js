@@ -3,8 +3,12 @@ import emailjs from "@emailjs/browser";
 import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { useLocalization } from '../../context/LocalizationContext'
 
 function Contact() {
+
+  const { translate } = useLocalization();
+
   const [email, setEmail] = useState("");
   const [fullName, setFullName] = useState("");
   const [message, setMessage] = useState("");
@@ -63,10 +67,9 @@ function Contact() {
   return (
     <div id="contact_me" className="contact-form">
       <div className="form">
-        <h1 className="form_title">Contacto</h1>
+        <h1 className="form_title">{translate("contactTitle")}</h1>
         <p>
-          ¿Listo para darle vida a tus recuerdos? No dude en comunicarse con
-          nosotros y unirse a la experiencia Billy55Producciones.
+        {translate("contactParagraph")}
         </p>
         <div>
           <form ref={form} onSubmit={sendEmail}>
@@ -76,7 +79,7 @@ function Contact() {
               onChange={handleInputChange}
               onBlur={handleInputChange}
               type="text"
-              placeholder="Nombre"
+              placeholder={translate("placeholderName")}
               className="formInput"
               id="inputName"
             />
@@ -86,7 +89,7 @@ function Contact() {
               onChange={handleInputChange}
               onBlur={handleInputChange}
               type="email"
-              placeholder="Correo Electronico"
+              placeholder={translate("placeholderEmail")}
               className="formInput"
               id="inputEmail"
             />
@@ -96,12 +99,12 @@ function Contact() {
               onChange={handleInputChange}
               onBlur={handleInputChange}
               type="textarea"
-              placeholder="Mensaje"
+              placeholder={translate("placeholderMessage")}
               className="formInput"
               id="inputMessage"
             />
             <button className="flat-button" type="submit">
-              Enviar
+            {translate("buttonSend")}
             </button>
           </form>
           {errorMessage && (
@@ -112,7 +115,7 @@ function Contact() {
         </div>
       </div>
       <div className="redes">
-        <h2>Siguenos en las redes</h2>
+        <h2>{translate("socialMediaTitle")}</h2>
         <ul>
           <li>
             <a
