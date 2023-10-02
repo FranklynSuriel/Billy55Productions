@@ -1,6 +1,9 @@
+// Import React
 import React from "react";
+// Import ImageModal.css
 import './ImageModal.css';
 
+// Set a function to handle the modal
 function ImageModal({ imageUrl, onClose }) {
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -11,4 +14,5 @@ function ImageModal({ imageUrl, onClose }) {
   );
 }
 
+// Export ImageModal
 export default ImageModal;
