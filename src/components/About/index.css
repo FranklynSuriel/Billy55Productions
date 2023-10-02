@@ -1,5 +1,7 @@
+/* Import animate.css to use the animation for About component */
 @import 'animate.css';
 
+/* About component container */
 .about_text {
   box-sizing: border-box;
   flex-shrink: 0;
@@ -20,6 +22,7 @@
   flex-wrap: wrap;
 }
 
+/* About component title */
 .about_title {
   width: 320px;
   height: auto;
@@ -39,6 +42,7 @@
   animation: fadeInLeft 1s forwards;
 }
 
+/* About component paragraph */
 .about_paragraph {
   width: 600px;
   height: auto; 
@@ -57,10 +61,7 @@
   animation: fadeInRight 1s forwards;
 }
 
-.about_paragraph span {
-  color: #ffc300;
-}
-
+/* set the parameters for screen max-with 1024px */
 @media screen and (max-width: 1024px) {
   .about_paragraph {
     font-size: 21px;
@@ -68,6 +69,7 @@
   }
 }
 
+/* set the parameters for screen max-with 768px */
 @media screen and (max-width: 768px) {
   .about_text {
     display: flex;
@@ -87,6 +89,8 @@
     font-size: 20px;
   }
 }
+
+/* set the parameters for screen max-with 425px */
 @media screen and (max-width: 425px) {
   .about_text {
     padding: 12px;

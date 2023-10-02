@@ -1,14 +1,18 @@
+// Import React, index.css, emailjs
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./index.css";
+// import FontAwesome to get socila media icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+// import uselocalization
 import { useLocalization } from '../../context/LocalizationContext'
 
 function Contact() {
-
+  // Create translate constant to get the content of the section
   const { translate } = useLocalization();
 
+  // Create constants using useState to use with contact form
   const [email, setEmail] = useState("");
   const [fullName, setFullName] = useState("");
   const [message, setMessage] = useState("");
@@ -16,8 +20,9 @@ function Contact() {
 
   const form = useRef();
 
+  // Create a function to send the contact form information
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
 
     // if (!validateEmail(email) || !fullName || !message) {
     //   setErrorMessage("Email, name, or message is not valid");
@@ -33,22 +38,25 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          // Clear the contact form inputs after sending the email
           setEmail("");
           setFullName("");
           setMessage("");
         },
         (error) => {
+          // console log any error
           console.log(error.text);
         }
       );
   };
 
+  // create handleInputChange function to save the the input values
   const handleInputChange = (e) => {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
+    // if statement to save the input values
     if (inputType === "email") {
       setEmail(inputValue);
     } else if (inputType === "fullName") {
@@ -56,7 +64,8 @@ function Contact() {
     } else {
       setMessage(inputValue);
     }
-
+    
+    // if input value is empty, display an error message
     if (inputValue.trim() === "") {
       setErrorMessage(`${inputType} is required`);
     } else {
@@ -149,4 +158,5 @@ function Contact() {
   );
 }
 
+// Export Contact 
 export default Contact;

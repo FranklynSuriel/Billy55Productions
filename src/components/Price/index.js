@@ -1,9 +1,11 @@
+// Import React, index.css
 import React from "react";
 import "./index.css";
+// import useLocalization
 import { useLocalization } from '../../context/LocalizationContext'
 
 function Price() {
-
+  // Create translate constant to get the content of the section
   const { translate } = useLocalization();
 
   return (
@@ -38,4 +40,5 @@ function Price() {
   );
 }
 
+// Export Price
 export default Price;

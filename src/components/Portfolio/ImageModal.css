@@ -1,4 +1,4 @@
-/* ImageModal.css */
+/* set parameters of the modal overlay */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -12,6 +12,7 @@
   z-index: 1000;
 }
 
+/* set parameter for the modal content */
 .modal-content {
   background: white;
   padding: 20px;
@@ -19,6 +20,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+/* set parameters for the modal image */
 .modal-content img {
   max-width: 100%;
   max-height: 80vh;

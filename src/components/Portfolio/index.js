@@ -1,10 +1,12 @@
+// Import React, index.css
 import React, { useState } from "react";
 import './index.css';
-import 'animate.css';
+// import ImageModal
 import ImageModal from "./ImageModal";
-
+// import useLocalization
 import { useLocalization } from '../../context/LocalizationContext'
 
+// create an array of images
 const images = [
   require('../pictures/image01.jpg'),
   require('../pictures/image02.jpg'),
@@ -22,20 +24,22 @@ const images = [
   require('../pictures/image04.jpg'),
   require('../pictures/image09.jpg'),
   require('../pictures/image10.jpg'),
-  // require('../pictures/image13.jpg'), // Commented out
-  // require('../pictures/image18.jpg'), // Commented out
+  // require('../pictures/image13.jpg'), // Future versions
+  // require('../pictures/image18.jpg'), // Future versions
 ];
 
 function Portfolio() {
-
+  // Create translate constant to get the content of the section
   const { translate } = useLocalization();
-
+  // Create a constant using useState to set the selected image
   const [selectedImage, setSelectedImage] = useState(null);
 
+  // create a function to handle which image was clicked
   const handleImageClick = (index) => {
     setSelectedImage(index);
   }
 
+  // Create a function to close the modal
   const handleCloseModal = () => {
     setSelectedImage(null);
   }
@@ -53,6 +57,7 @@ function Portfolio() {
           />
         ))}
       </div>
+      {/* if selectedImage is not null will open a modal with the selected image */}
       {selectedImage !== null && (
         <ImageModal
           imageUrl={images[selectedImage]}
@@ -64,4 +69,5 @@ function Portfolio() {
   );
 }
 
+// Export Portfolio
 export default Portfolio;
