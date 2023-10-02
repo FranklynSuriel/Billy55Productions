@@ -1,9 +1,11 @@
+// Import React, index.css
 import React from "react";
 import "./index.css";
+// import useLocalization
 import { useLocalization } from '../../context/LocalizationContext'
 
 function About() {
-
+  // Create translate constant to get the content of the section
   const { translate } = useLocalization();
 
   return (
@@ -18,4 +20,5 @@ function About() {
   );
 }
 
+// Export About
 export default About;

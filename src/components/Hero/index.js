@@ -1,13 +1,16 @@
+// Import React, index.css, useLocalization
 import React from "react";
 import "./index.css";
 import { useLocalization } from '../../context/LocalizationContext'
 
 function Hero() {
-
+  // Create translate constant to get the content of the section
   const { translate } = useLocalization();
 
+  // Create language constant to set the language between English or Spanish
   const { language, setLanguage } = useLocalization();
 
+  // function to toogle between languages
   const toggleLanguage = () => {
     setLanguage(language === "en" ? "es" : "en");
   };
@@ -44,4 +47,5 @@ function Hero() {
   );
 }
 
+// Export Hero
 export default Hero;

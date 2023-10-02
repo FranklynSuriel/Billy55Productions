@@ -1,5 +1,7 @@
+/* Import animate.css to use the animation for Hero component */
 @import "animate.css";
 
+/* Hero component container */
 #hero {
   box-sizing: border-box;
   width: 100%;
@@ -14,6 +16,7 @@
   animation: fadeIn 1.5s forwards;
 }
 
+/* Hero component Language button */
 #buttonLanguage {
   position: absolute;
   top: 20px;
@@ -27,6 +30,7 @@
   font-family: sans-serif;
 }
 
+/* Hero component Name of the Business */
 #hero_text {
   max-width: 660px;
   height: auto; /* 81px */
@@ -39,6 +43,7 @@
   text-align: center;
 }
 
+/* Hero component navBar */
 #navBar {
   display: flex;
   flex-wrap: wrap;
@@ -46,19 +51,19 @@
   list-style: none;
 }
 
+/* Hero component navBar list */
 .list {
   padding: 0 16px;
 }
 
-.list a {
-  text-decoration: none;
-}
-
+/* Hero component navBar list anchor*/
 .nav-link {
+  text-decoration: none;
   color:#ffc300;
   font-size: 18px;
 }
 
+/* set the parameters for screen max-with 1024px */
 @media screen and (max-width: 1024px) {
   #hero_text {
     font-size: 61px;
@@ -70,6 +75,7 @@
 
 }
 
+/* set the parameters for screen max-with 768px */
 @media screen and (max-width: 768px) {
   #hero {
     padding: 20px;
@@ -91,6 +97,7 @@
 
 }
 
+/* set the parameters for screen max-with 425px */
 @media screen and (max-width: 425px) {
   #hero {
     padding: 20px;
