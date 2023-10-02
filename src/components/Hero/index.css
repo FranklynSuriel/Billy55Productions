@@ -16,6 +16,14 @@
   animation: fadeIn 1.5s forwards;
 }
 
+#logo {
+  max-height: 200px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  flex: 1;
+}
+
 /* Hero component Language button */
 #buttonLanguage {
   position: absolute;
@@ -81,6 +89,10 @@
     padding: 20px;
     height: 500px;
   }
+
+  #logo {
+    height: 100px;
+  }
   
   #hero_text {
     font-size: 52px;
@@ -102,6 +114,10 @@
   #hero {
     padding: 20px;
     height: 400px;
+  }
+
+  #logo {
+    height: 60px;
   }
 
   #hero_text {
