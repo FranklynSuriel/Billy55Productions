@@ -17,11 +17,11 @@
 }
 
 #logo {
-  max-height: 200px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  flex: 1;
+  height: auto;
+  width: 40%;
+  max-height: 650px;
+  max-width: 550px;
+
 }
 
 /* Hero component Language button */
@@ -38,10 +38,12 @@
   font-family: sans-serif;
 }
 
+/*-- Future development --*/
 /* Hero component Name of the Business */
-#hero_text {
+/* #hero_text {
+  display: none;
   max-width: 660px;
-  height: auto; /* 81px */
+  height: auto;
   font-style: normal;
   font-family: serif;
   font-size: 81px;
@@ -49,7 +51,7 @@
   letter-spacing: 0em;
   line-height: 1;
   text-align: center;
-}
+} */
 
 /* Hero component navBar */
 #navBar {
@@ -73,9 +75,10 @@
 
 /* set the parameters for screen max-with 1024px */
 @media screen and (max-width: 1024px) {
-  #hero_text {
+  /*-- Future development --*/
+  /* #hero_text {
     font-size: 61px;
-  }
+  } */
 
   .list {
     padding: 0 8px;
@@ -90,13 +93,14 @@
     height: 500px;
   }
 
-  #logo {
-    height: 100px;
-  }
+  /* #logo {
+    height: 300px;
+  } */
   
-  #hero_text {
+  /*-- Future development --*/
+  /* #hero_text {
     font-size: 52px;
-  }
+  } */
 
   .list {
     padding: 0;
@@ -115,14 +119,15 @@
     padding: 20px;
     height: 400px;
   }
-
+/* 
   #logo {
-    height: 60px;
-  }
-
-  #hero_text {
-    font-size: 36px;
-  }
+    height: 150px;
+  } */
+  
+  /*-- Future development --*/
+  /* #hero_text {
+    font-size: 36px
+  } */
 
   #navBar {
     flex-direction: column;

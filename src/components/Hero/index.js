@@ -21,9 +21,10 @@ function Hero() {
     <div id="hero">
       <img id="logo" src={ logo } alt=" Billy55 Producciones Logo" />
       <button id="buttonLanguage" onClick={toggleLanguage}>{translate("buttonLanguage")}</button>
-      <h1 id="hero_text">
+      {/* -- Future development -- */}
+      {/* <h1 id="hero_text">
       {translate("heroTitle")}
-      </h1>
+      </h1> */}
       <ul id="navBar">
         <li className="list">
           <a className="nav-link" href="#about_me">
