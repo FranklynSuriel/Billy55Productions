@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 // import uselocalization
 import { useLocalization } from '../../context/LocalizationContext'
+import ScrollAnimation from "../ScrollAnimation";
 
 function Contact() {
   // Create translate constant to get the content of the section
@@ -74,6 +75,7 @@ function Contact() {
   };
 
   return (
+    <ScrollAnimation>
     <div id="contact_me" className="contact-form">
       <div className="form">
         <h1 className="form_title">{translate("contactTitle")}</h1>
@@ -155,6 +157,7 @@ function Contact() {
         <p>Generated on Sept 19, 2023 </p>
       </div>
     </div>
+    </ScrollAnimation>
   );
 }
 
