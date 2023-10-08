@@ -5,24 +5,16 @@
 #hero {
   box-sizing: border-box;
   width: 100%;
-  height: 800px;
+  height: 500px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px;
+  padding: 50px;
   background-color: #003566;
   overflow: hidden;
   animation: fadeIn 1.5s forwards;
 }
 
-#logo {
-  height: auto;
-  width: 40%;
-  max-height: 650px;
-  max-width: 550px;
-
-}
 
 /* Hero component Language button */
 #buttonLanguage {
@@ -32,10 +24,20 @@
   transform: translate(-50%, 0);
   height: 28px;
   background: none;
-  background-color: #d3d3d3;
+  background-color: #003566;
   font-size: 14px;
   font-weight: 400;
   font-family: sans-serif;
+  color: #fff;
+  border: none;
+}
+
+#buttonLanguage:hover {
+  cursor: pointer;
+}
+
+#logo {
+  height: 200px;
 }
 
 /*-- Future development --*/
@@ -58,7 +60,12 @@
   display: flex;
   flex-wrap: wrap;
   padding: 4px;
+  margin-left: 48px;
   list-style: none;
+  position: relative;
+  top: 94px;
+  height: 50px;
+
 }
 
 /* Hero component navBar list */
@@ -69,8 +76,9 @@
 /* Hero component navBar list anchor*/
 .nav-link {
   text-decoration: none;
-  color:#ffc300;
+  color:#fff;
   font-size: 18px;
+  font-family: sans-serif;
 }
 
 /* set the parameters for screen max-with 1024px */
@@ -80,30 +88,16 @@
     font-size: 61px;
   } */
 
+  #logo {
+    height: 150px;
+  }
+
+  #navBar {
+    top: 74px;
+    }
+
   .list {
     padding: 0 8px;
-  }
-
-}
-
-/* set the parameters for screen max-with 768px */
-@media screen and (max-width: 768px) {
-  #hero {
-    padding: 20px;
-    height: 500px;
-  }
-
-  /* #logo {
-    height: 300px;
-  } */
-  
-  /*-- Future development --*/
-  /* #hero_text {
-    font-size: 52px;
-  } */
-
-  .list {
-    padding: 0;
   }
 
   .nav-link {
@@ -113,12 +107,39 @@
 
 }
 
+/* set the parameters for screen max-with 768px */
+@media screen and (max-width: 768px) {
+  #hero{
+    padding: 20px 0px;
+    flex-direction: column;
+  }
+  /*-- Future development --*/
+  /* #hero_text {
+    font-size: 52px;
+  } */
+
+  #navBar {
+    flex-wrap: nowrap;
+    margin: 0;
+    top: 24px;
+    width: 360px;
+    }
+
+  .list {
+    padding: 0;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+}
+
 /* set the parameters for screen max-with 425px */
 @media screen and (max-width: 425px) {
-  #hero {
+  /* #hero {
     padding: 20px;
-    height: 400px;
-  }
+  } */
 /* 
   #logo {
     height: 150px;
@@ -130,16 +151,16 @@
   } */
 
   #navBar {
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
+    width: 302px;
+    }
+
 
   .list {
     padding: 0;
   }
 
   .nav-link {
-    font-size: 14px;
+    font-size: 12px;
     padding: 0 4px;
   }
 

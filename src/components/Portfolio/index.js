@@ -5,7 +5,6 @@ import "./index.css";
 import ImageModal from "./ImageModal";
 // import useLocalization
 import { useLocalization } from "../../context/LocalizationContext";
-import ScrollAnimation from "../ScrollAnimation";
 
 // create an array of images
 const images = [
@@ -45,34 +44,32 @@ function Portfolio() {
     setSelectedImage(null);
   };
   return (
-    <div id="portfolio" >
-      <ScrollAnimation>
-        <div className="portfolio">
-          <h1 className="portfolio_title">{translate("portfolioTitle")}</h1>
-          <div className="portfolio_container">
-            {images.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                className={
-                  index < 8
-                    ? "portfolio_image_landscape"
-                    : "portfolio_image_portrait"
-                }
-                alt={` Sample ${index + 1}`}
-                onClick={() => handleImageClick(index)}
-              />
-            ))}
-          </div>
-          {/* if selectedImage is not null will open a modal with the selected image */}
-          {selectedImage !== null && (
-            <ImageModal
-              imageUrl={images[selectedImage]}
-              onClose={handleCloseModal}
+    <div id="portfolio">
+      <div className="portfolio">
+        <h1 className="portfolio_title">{translate("portfolioTitle")}</h1>
+        <div className="portfolio_container">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              className={
+                index < 8
+                  ? "portfolio_image_landscape"
+                  : "portfolio_image_portrait"
+              }
+              alt={` Sample ${index + 1}`}
+              onClick={() => handleImageClick(index)}
             />
-          )}
+          ))}
         </div>
-      </ScrollAnimation>
+        {/* if selectedImage is not null will open a modal with the selected image */}
+        {selectedImage !== null && (
+          <ImageModal
+            imageUrl={images[selectedImage]}
+            onClose={handleCloseModal}
+          />
+        )}
+      </div>
     </div>
   );
 }
