@@ -5,7 +5,7 @@
   height: min-content; /* 603px */
   align-items: center;
   padding: 20px;
-  background-color: #d3d3d3;
+  background-color: #a4a4a4;
   overflow: visible;
   position: relative;
 
@@ -40,12 +40,12 @@
   border-radius: 30px;
 }
 
+/*-------------- Future DDevelopment ------------------*/
 /* Price component card title */
-.card h4 {
-  width: auto; /* 37px */
-  height: auto; /* 21px */
+/* .card h4 {
+  width: auto; 
+  height: auto; 
   margin: 8px;
-
   white-space: pre;
   position: relative;
   font-weight: 400;
@@ -56,19 +56,19 @@
   letter-spacing: 0em;
   line-height: 1.5;
   text-align: left;
-}
+} */
 
 /* Price component card price */
 .card h2 {
   width: auto; /* 115px */
   height: 48px;
-  margin: 16px 0;
+  margin: 32px 0;
   white-space: pre;
   position: relative;
   font-weight: 800;
   font-style: normal;
-  font-family: "Wix Madefor Display", sans-serif;
-  color: #ffc300;
+  font-family: sans-serif;
+  color: #fec30d;
   font-size: 40px;
   letter-spacing: 0em;
   line-height: 1;
@@ -77,15 +77,15 @@
 
 /* Price component card price detailed */
 .card p {
-  width: 150px;
+  width: 160px;
   height: auto; /* 21px */
   margin: 14px 0;
   white-space: pre-wrap;
   position: relative;
   font-weight: 400;
   font-style: normal;
-  font-family: "Libre Baskerville", "Libre Baskerville Placeholder", serif;
-  color: #ffc300;
+  font-family: sans-serif;
+  color: #fec30d;
   font-size: 16px;
   letter-spacing: 0em;
   line-height: 1.5;

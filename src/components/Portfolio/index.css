@@ -11,7 +11,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 36px;
-  background-color: #d3d3d3; /* #cad2c5 */
+  background-color: #a4a4a4; 
   overflow: hidden;
   position: relative;
   align-content: center;
@@ -28,11 +28,12 @@
   font-weight: 800;
   font-style: normal;
   font-family: sans-serif;
-  color: #001d3d;
+  color: #1a3764;
   font-size: 48px;
   letter-spacing: 0em;
   line-height: 1.2;
   text-align: left;
+  animation: fadeInDown 1.5s forwards;
 }
 
 /* Portfolio component image container */
@@ -67,17 +68,6 @@
 /* Portfolio component image landscape and portrait hover*/
 .portfolio_image_portrait:hover, .portfolio_image_landscape:hover {
   cursor: pointer;
-}
-
-.scroll-animation {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-.scroll-animation.animate {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* set the parameters for screen max-with 992px */

@@ -1,9 +1,9 @@
 // Import React, index.css, useLocalization
 import React from "react";
 import "./index.css";
-import { useLocalization } from '../../context/LocalizationContext'
+import { useLocalization } from "../../context/LocalizationContext";
 // import logo
-import logo from '../pictures/Billy55Producciones.png'
+import logo from "../pictures/Billy55Producciones.png";
 
 function Hero() {
   // Create translate constant to get the content of the section
@@ -19,8 +19,10 @@ function Hero() {
 
   return (
     <div id="hero">
-      <img id="logo" src={ logo } alt=" Billy55 Producciones Logo" />
-      <button id="buttonLanguage" onClick={toggleLanguage}>{translate("buttonLanguage")}</button>
+      <img id="logo" src={logo} alt=" Billy55 Producciones Logo" />
+      <button id="buttonLanguage" onClick={toggleLanguage}>
+        {translate("buttonLanguage")}
+      </button>
       {/* -- Future development -- */}
       {/* <h1 id="hero_text">
       {translate("heroTitle")}
@@ -28,22 +30,22 @@ function Hero() {
       <ul id="navBar">
         <li className="list">
           <a className="nav-link" href="#about_me">
-          {translate("navAboutUs")}
+            {translate("navAboutUs")}
           </a>
         </li>
         <li className="list">
           <a className="nav-link" href="#portfolio">
-          {translate("navPortfolio")}
+            {translate("navPortfolio")}
           </a>
         </li>
         <li className="list">
           <a className="nav-link" href="#price">
-          {translate("navQuotes")}
+            {translate("navQuotes")}
           </a>
         </li>
         <li className="list">
           <a className="nav-link" href="#contact_me">
-          {translate("navContactUs")}
+            {translate("navContactUs")}
           </a>
         </li>
       </ul>
