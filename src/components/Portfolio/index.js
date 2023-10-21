@@ -50,6 +50,7 @@ function Portfolio() {
         <div className="portfolio_container">
           {images.map((image, index) => (
             <img
+              loading="lazy"
               key={index}
               src={image}
               className={
