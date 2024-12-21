@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f3b5ad7c.css",
-    "main.js": "/static/js/main.d2be3d9b.js",
+    "main.css": "/static/css/main.65bd8393.css",
+    "main.js": "/static/js/main.dc53e764.js",
     "static/js/787.92eaf79d.chunk.js": "/static/js/787.92eaf79d.chunk.js",
     "static/media/image02.jpg": "/static/media/image02.6ea9b9b1877c4d0ed6fd.jpg",
     "static/media/image06.jpg": "/static/media/image06.a54581c75ccc51c9a015.jpg",
@@ -16,17 +16,19 @@
     "static/media/image08.jpg": "/static/media/image08.fa15eacd7f80a9d26ee6.jpg",
     "static/media/image01.jpg": "/static/media/image01.d2a7e774338f5a4f3ac6.jpg",
     "static/media/image07.jpg": "/static/media/image07.7d65377b188bd31ded72.jpg",
+    "static/media/image13.jpg": "/static/media/image13.9b742378dd993717b6dc.jpg",
+    "static/media/image18.jpg": "/static/media/image18.a89fa2683419ca2eb107.jpg",
     "static/media/image11.jpg": "/static/media/image11.69dc4624546b0fb3a725.jpg",
     "static/media/Billy55Producciones.png": "/static/media/Billy55Producciones.74492bc66bb132822690.png",
     "static/media/image14.jpg": "/static/media/image14.ac53ddaaa26a4e18cd6b.jpg",
     "static/media/image15.jpg": "/static/media/image15.dde7f0e8d5f89876df96.jpg",
     "index.html": "/index.html",
-    "main.f3b5ad7c.css.map": "/static/css/main.f3b5ad7c.css.map",
-    "main.d2be3d9b.js.map": "/static/js/main.d2be3d9b.js.map",
+    "main.65bd8393.css.map": "/static/css/main.65bd8393.css.map",
+    "main.dc53e764.js.map": "/static/js/main.dc53e764.js.map",
     "787.92eaf79d.chunk.js.map": "/static/js/787.92eaf79d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3b5ad7c.css",
-    "static/js/main.d2be3d9b.js"
+    "static/css/main.65bd8393.css",
+    "static/js/main.dc53e764.js"
   ]
 }
