@@ -54,7 +54,7 @@ function Hero() {
             id="nav-button"
             onClick={() => {
               window.location.href =
-                "http://localhost/billy55producciones/src/components/producciones55/login.php";
+                "../producciones55/login.php";
             }}
           >
             {translate("navLogin")}
