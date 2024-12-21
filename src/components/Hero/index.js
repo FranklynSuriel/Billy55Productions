@@ -11,6 +11,7 @@ function Hero() {
 
   // Create language constant to set the language between English or Spanish
   const { language, setLanguage } = useLocalization();
+  // const { login, setLogin } = useLocalization();
 
   // function to toogle between languages
   const toggleLanguage = () => {
@@ -47,6 +48,17 @@ function Hero() {
           <a className="nav-link" href="#contact_me">
             {translate("navContactUs")}
           </a>
+        </li>
+        <li className="list">
+          <button
+            id="nav-button"
+            onClick={() => {
+              window.location.href =
+                "http://localhost/billy55producciones/src/components/producciones55/login.php";
+            }}
+          >
+            {translate("navLogin")}
+          </button>
         </li>
       </ul>
     </div>

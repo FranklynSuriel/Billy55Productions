@@ -68,6 +68,19 @@
 
 }
 
+#nav-button {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color:#fff;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#nav-button:hover {
+  cursor: pointer;
+}
+
 /* Hero component navBar list */
 .list {
   padding: 0 16px;

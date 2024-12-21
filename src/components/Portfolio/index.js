@@ -10,22 +10,22 @@ import { useLocalization } from "../../context/LocalizationContext";
 const images = [
   require("../pictures/image01.jpg"),
   require("../pictures/image02.jpg"),
+  require("../pictures/image03.jpg"),
+  require("../pictures/image04.jpg"),
   require("../pictures/image05.jpg"),
   require("../pictures/image06.jpg"),
-  require("../pictures/image12.jpg"),
-  require("../pictures/image11.jpg"),
-  require("../pictures/image14.jpg"),
   require("../pictures/image17.jpg"),
   require("../pictures/image16.jpg"),
-  require("../pictures/image03.jpg"),
-  require("../pictures/image15.jpg"),
-  require("../pictures/image08.jpg"),
   require("../pictures/image07.jpg"),
-  require("../pictures/image04.jpg"),
-  require("../pictures/image09.jpg"),
+  require("../pictures/image08.jpg"),
+  require("../pictures/image11.jpg"),
   require("../pictures/image10.jpg"),
-  // require('../pictures/image13.jpg'), // Future versions
-  // require('../pictures/image18.jpg'), // Future versions
+  require("../pictures/image12.jpg"),
+  require("../pictures/image09.jpg"),
+  require("../pictures/image14.jpg"),
+  require("../pictures/image15.jpg"),
+  require('../pictures/image13.jpg'), // Future versions
+  require('../pictures/image18.jpg'), // Future versions
 ];
 
 function Portfolio() {
