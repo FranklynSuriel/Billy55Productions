@@ -11,7 +11,7 @@ const images = [
   require("../pictures/image01.jpg"),
   require("../pictures/image02.jpg"),
   require("../pictures/image03.jpg"),
-  require("../pictures/image04.jpg"),
+  //require("../pictures/image04.jpg"),
   require("../pictures/image05.jpg"),
   require("../pictures/image06.jpg"),
   require("../pictures/image17.jpg"),
