@@ -132,7 +132,7 @@ function Contact() {
             <a
               target="_black"
               rel="noreferrer"
-              href="https://www.instagram.com/b.fotografo55/"
+              href="https://www.instagram.com/billy55producciones/"
             >
               <FontAwesomeIcon
                 icon={faInstagram}
@@ -145,7 +145,7 @@ function Contact() {
             <a
               target="_black"
               rel="noreferrer"
-              href="https://www.youtube.com/channel/UCspzzX8DIznZpE8jHT9ZaZA"
+              href="https://www.youtube.com/@BILLY55PRODUCCIONES"
             >
               <FontAwesomeIcon icon={faYoutube} color="red" className="icon" />
             </a>
